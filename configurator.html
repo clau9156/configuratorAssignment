@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+</head>
+<body>
+    <section class="SVGContainer">
+
+    </section>
+    <div id="configurator">
+        <div id="product-preview">
+          
+          <!-- <img src="images/cap_basic.png" alt="" class="basic" data-feature="basic"/> -->
+          <!-- TODO: add all feature image layers -->
+          <!-- <img src="images/cap_solarfan.png" alt="" class="hide" data-feature="solarfan"/> -->
+          <!-- <img src="images/cap_drinksholder.png" alt="" class="hide" data-feature="drinksholder"/> -->
+          <!-- <img src="images/cap_led.png" alt="" class="hide" data-feature="led"/> -->
+          <!-- <img src="images/cap_propeller.png" alt="" class="hide" data-feature="propeller"/> -->
+          <!-- <img src="images/cap_shield_back.png" alt="" class="hide shield" data-feature="shield"/> -->
+        </div>
+        <div id="options">
+          Available features
+          <figure class="option" data-feature="drinksholder">
+            <!-- <img src="images/feature_drinksholder.png" alt="Drinksholder" /> -->
+            <figcaption>Drinks holder</figcaption>
+          </figure>
+          <figure class="option" data-feature="led">
+            <!-- <img src="images/feature_led.png" alt="LED" /> -->
+            <figcaption>LED text</figcaption>
+          </figure>
+          <figure class="option" data-feature="propeller">
+            <!-- <img src="images/feature_propeller.png" alt="Propeller" /> -->
+            <figcaption>Propeller</figcaption>
+          </figure>
+          <figure class="option" data-feature="shield">
+            <!-- <img src="images/feature_shield.png" alt="Sun shield" /> -->
+            <figcaption>Sun Shield</figcaption>
+          </figure>
+          <figure class="option" data-feature="solarfan">
+            <!-- <img src="images/feature_solarfan.png" alt="Solar powered fan" /> -->
+            <figcaption>Solar Powered Fan</figcaption>
+          </figure>
+        </div>
+        <div id="selected">
+          Selected features
+          <ul>
+            <!-- featureElements are added here! -->
+          </ul>
+        </div>
+      </div>
+    <div id="colorContainer">
+        <h4>COLOR</h4>
+        <svg viewBox="0 0 842 200">
+            <rect id="grey" class="color_btn" width="30" height="30" fill="#grey" stroke="grey"/>
+            <rect id="brown" class="color_btn" x="40" width="30" height="30" fill="#brown" stroke="grey"/>
+            <rect id="beige" class="color_btn" y="40" width="30" height="30" fill="#beige" stroke="grey"/>
+            <rect id="lightgrey" class="color_btn" x="40" y="40" width="30" height="30" fill="#lightgrey" stroke="grey"/>
+            <rect id="darkbrown" class="color_btn" y="80" width="30" height="30" fill="#darkbrown" stroke="grey"/>
+            <rect id="black" class="color_btn" x="40" y="80" width="30" height="30" fill="#darkgrey" stroke="grey"/>
+            <rect id="darkgreen" class="color_btn" y="120" width="30" height="30" fill="#darkgreen" stroke="grey"/>
+            <rect id="darkred" class="color_btn" x="40" y="120" width="30" height="30" fill="#darkred" stroke="grey"/>
+            <rect id="green" class="color_btn" y="160" width="30" height="30" fill="#green" stroke="grey"/>
+            <!-- dark green olive green beige brown black dark blue dark red wheat  -->
+            <rect id="darkblue" class="color_btn" x="40" y="160" width="30" height="30" fill="#darkblue" stroke="grey"/> 
+            <rect id="olivegreen" class="color_btn" x="40" y="160" width="30" height="30" fill="#darkblue" stroke="grey"/>   
+        </svg>
+    </div>  
+    <script src="script.js"></script>  
+</body>
+</html>

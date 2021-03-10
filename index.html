@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Backpack configurator</title>
+</head>
+<style>
+    #shadows_Image-2 {
+        pointer-events: none;
+    }
+</style>
+<body>
+    <header><h2>The Travel Photographer</h2></header>
+    <div id="container">
+    <div id="options">
+        <h1>ADD FEATURES:</h1>
+        <figure class="option" data-feature="tripod">
+          <img src="images/add_tripod_feature.png" alt="tripod" />
+          <figcaption>Tripod</figcaption>
+        </figure>
+        <figure class="option" data-feature="trolley">
+          <img src="images/add_trolley_feature.png" alt="trolley" />
+          <figcaption>Trolley Supoprt</figcaption>
+        </figure>
+        <figure class="option" data-feature="blanket">
+          <img src="images/add_blanket_feature.png" alt="blanket" />
+          <figcaption>Blanket</figcaption>
+        </figure>
+        <figure class="option" data-feature="waterbottle">
+            <img src="images/add_waterbottle_feature.png" alt="waterbottle" />
+            <figcaption>Waterbottle</figcaption>
+          </figure>
+        </figure>
+      </div>
+      <div id="backpack">
+          <section class="product-preview"></section>
+          <img src="images/blanket.png" alt="blanket" class="hide blanket" data-feature="blanket"/>
+          <img src="images/tripod.png" alt="tripod" class="hide tripod" data-feature="tripod"/>
+          <img src="images/trolley.png" alt="trolley" class="hide trolley" data-feature="trolley"/>
+          <img src="images/waterbottle.png" alt="waterbottle" class="hide waterbottle" data-feature="waterbottle"/>
+    </div>
+      <div id="colorholder">
+    <h1>CHOOSE A COLOR:</h1>
+    <svg id="colorbox" viewBoX="0 0 400 800">
+        <!-- FILL PATTERNS -->
+        <pattern id="pattern-hex" x="0" y="0" width="112" height="190" patternUnits="userSpaceOnUse" viewBox="56 -254 112 190">
+            <g id="hexagon">
+              <path d="M168-127.1c0.5,0,1,0.1,1.3,0.3l53.4,30.5c0.7,0.4,1.3,1.4,1.3,2.2v61c0,0.8-0.6,1.8-1.3,2.2L169.3-0.3
+            c-0.7,0.4-1.9,0.4-2.6,0l-53.4-30.5c-0.7-0.4-1.3-1.4-1.3-2.2v-61c0-0.8,0.6-1.8,1.3-2.2l53.4-30.5C167-127,167.5-127.1,168-127.1
+            L168-127.1z"/>
+            <path d="M112-222.5c0.5,0,1,0.1,1.3,0.3l53.4,30.5c0.7,0.4,1.3,1.4,1.3,2.2v61c0,0.8-0.6,1.8-1.3,2.2l-53.4,30.5
+            c-0.7,0.4-1.9,0.4-2.6,0l-53.4-30.5c-0.7-0.4-1.3-1.4-1.3-2.2v-61c0-0.8,0.6-1.8,1.3-2.2l53.4-30.5
+            C111-222.4,111.5-222.5,112-222.5L112-222.5z"/>
+            <path d="M168-317.8c0.5,0,1,0.1,1.3,0.3l53.4,30.5c0.7,0.4,1.3,1.4,1.3,2.2v61c0,0.8-0.6,1.8-1.3,2.2L169.3-191
+            c-0.7,0.4-1.9,0.4-2.6,0l-53.4-30.5c-0.7-0.4-1.3-1.4-1.3-2.2v-61c0-0.8,0.6-1.8,1.3-2.2l53.4-30.5
+            C167-317.7,167.5-317.8,168-317.8L168-317.8z"/>
+          </g>
+        </pattern>
+        <pattern id="pattern-cubes" x="0" y="126" patternUnits="userSpaceOnUse" width="126" height="200" viewBox="0 0 10 16"> 
+
+            <g id="cube">
+              <path class="left-shade" d="M0 0l5 3v5l-5 -3z" />
+              <path class="right-shade" d="M10 0l-5 3v5l5 -3" />
+            </g>
+           
+            <use x="5" y="8" xlink:href="#cube" />
+            <use x="-5" y="8" xlink:href="#cube" />
+          </pattern>
+          <!-- COLOR BOXES -->
+      <rect class="color1" x="155" y="0" width="70" height="70" fill="darkgrey" />
+      <rect class="color2" x="155" y="100" width="70" height="70" fill="#436134" />
+      <rect class="color3" x="155" y="200" width="70" height="70" fill="wheat" />
+      <rect class="color4" x="155" y="300" width="70" height="70" fill="#680C0C" />
+      <rect class="color5" x="155" y="400" width="70" height="70" fill="#003F57" />
+      <rect
+        class="color6"
+        x="155"
+        y="500"
+        width="70"
+        height="70"
+        fill="#C299B1"
+      />
+      <rect
+        class="pattern1"
+        x="155"
+        y="600"
+        width="70"
+        height="70"
+        fill="url(#pattern-cubes)"
+      />
+      <rect
+        class="pattern2"
+        x="155"
+        y="700"
+        width="70"
+        height="70"
+        fill="url(#pattern-hex)"
+      />
+      </svg>
+    </div>
+    </div>
+    <h3>Selected features</h3>
+    <div id="selected">
+        <ul>
+          <!-- featureElements are added here! -->
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+}
+
+#options {
+  grid-area: options;
+  box-shadow: 3px 3px 8px #ddd;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#options .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  color: #aaa;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#colorholder {
+  height: 100vh;
+  width: 20%;
+  box-shadow: 3px 3px 8px #ddd;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+#hexagon {
+  fill: #fff;
+  stroke: rgb(4, 41, 4);
+  stroke-width: 20;
+}
+
+.left-shade {
+  fill: rgb(2, 2, 54);
+}
+
+.right-shade {
+  fill: darkblue;
+  opacity: 30%;
+}
+
+#options .option:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#options .option.chosen {
+  text-decoration: underline;
+  color: #000;
+}
+
+#options .option img {
+  width: 7vw;
+  height: auto;
+}
+
+#options .option figcaption {
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 5vw;
+}
+h2 {
+  padding-top: 1.5vw;
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+.hover:hover {
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 2;
+}
+
+#shadows_Image-2 {
+  pointer-events: none;
+}
+
+/* Animation classes */
+
+.animate-feature-in {
+  /* TODO: Create animation for adding a feature */
+  --diffX: 0;
+  --diffY: 0;
+  animation: feature-in 2s;
+}
+
+@keyframes feature-in {
+  0% {
+    transform: translate(calc(var(--diffX) * 1px), calc(var(--diffY) * 1px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-feature-out {
+  /* TODO: Create animation for removing a feature */
+  --diffX: 0;
+  --diffY: 0;
+  animation: feature-out 2s;
+}
+
+@keyframes feature-out {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(var(--diffX) * 1px), calc(var(--diffY) * 1px));
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#backpack {
+  width: 50vw;
+}
+
+.product-preview {
+  position: absolute;
+  z-index: 1;
+  top: 12vw;
+  left: 29vw;
+}
+
+.blanket {
+  z-index: 10;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 35vw;
+  top: 49.5vw;
+}
+
+.trolley {
+  z-index: -1;
+  width: auto;
+  height: 55vw;
+  position: absolute;
+  left: 26.2vw;
+  top: 5vw;
+}
+
+.tripod {
+  z-index: 12;
+  width: auto;
+  height: 40vw;
+  position: absolute;
+  left: 21vw;
+  top: 16vw;
+}
+
+.waterbottle {
+  z-index: 13;
+  width: auto;
+  height: 18vw;
+  position: absolute;
+  left: 58vw;
+  top: 34vw;
+}
+
+#selected ul li img {
+  width: 5em;
+}
+
+#selected ul li {
+  display: inline-block;
+}
+
+#selected {
+  position: absolute;
+  left: 37vw;
+}
